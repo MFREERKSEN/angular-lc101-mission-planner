@@ -1,0 +1,7 @@
+/* background-color: crimson; */
+.box {
+    color:blue;
+    display: flex;
+    padding: 10px;
+    background-color: crimson;
+ }
