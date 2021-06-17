@@ -7,16 +7,12 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./header.component.css']
 })
 export class HeaderComponent implements OnInit {
-<<<<<<< HEAD:src/app/header/header.component.ts
 
   missionName: string = "Mars 2030";
   rocketName: string = "Plasma Max";
   editingMission: boolean = false;
+  editingRocket: boolean = false;
   
-=======
-  missionName: string = "Mars 2030";
-  rocketName: string = "Plasma Max";
->>>>>>> 33aadfdcf874ba068ea4ab1cee55b9bd1e31c5cc:mission-planning-dashboard/src/app/header/header.component.ts
   constructor() { }
 
   ngOnInit() {
@@ -26,5 +22,8 @@ export class HeaderComponent implements OnInit {
     this.missionName = updatedName;
     this.editingMission = false;
   }
-
+  updateRocket(updatedName: string) {
+    this.rocketName = updatedName;
+    this.editingRocket = false;
+  }
 }
